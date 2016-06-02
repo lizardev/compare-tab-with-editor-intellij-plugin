@@ -1,0 +1,1 @@
+# compare-tab-with-editor-intellij-plugin
