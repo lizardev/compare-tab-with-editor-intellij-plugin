@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
+    }
+}
+
+plugins {
+    id "org.jetbrains.intellij" version "0.1.5"
+}
+
+intellij {
+    pluginName = 'compare-tab-with-editor'
+    version = 'IC-14.1.2'
+    updateSinceUntilBuild = false
+    publish {
+        username = 'adam.laczynski'
+        password = project.properties['password']
+    }
+}

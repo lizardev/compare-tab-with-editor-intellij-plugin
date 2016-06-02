@@ -1,0 +1,21 @@
+<idea-plugin version="2">
+  <id>6751</id>
+  <name>Compare Tab With Editor</name>
+  <description>Allows to compare file selected by right click on tab with currently edited file.</description>
+  <version>0.1</version>
+  <vendor>Adam Laczynski</vendor>
+  <idea-version since-build="8000"/>
+  <project-components>
+    <component>
+      <implementation-class>com.github.lizardev.intellij.ctwe.EditorService</implementation-class>
+      <interface-class>com.github.lizardev.intellij.ctwe.EditorService</interface-class>
+    </component>
+  </project-components>
+
+  <actions>
+    <action id="com.github.lizardev.intellij.ctwe.CompareTabWithEditor" class="com.github.lizardev.intellij.ctwe.CompareTabWithEditor"
+        text="Compare Tab With Editor" icon="/diff/Diff.png">
+      <add-to-group group-id="EditorTabPopupMenuEx" anchor="before" relative-to-action="ExternalToolsGroup"/>
+    </action>
+  </actions>
+</idea-plugin>
